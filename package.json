@@ -14,7 +14,8 @@
     "lodash": "^4.17.10",
     "raf": "^3.4.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.3.2"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.3.2",

@@ -14,3 +14,24 @@
 ### 自定义主题
 
 在 ```./theme.js``` 中配置自己的[样式主题](https://ant.design/docs/react/customize-theme-cn)。
+
+#### 如何自定义官方未提供的样式？
+
+使用 [```styled-components```](https://github.com/styled-components/styled-components) 进行 ```antd``` 组件的样式覆盖。
+
+```js
+import styled from 'styled-components';
+import { Menu } from 'antd';
+
+const MenuStyled = styled(Menu)`
+  border-right: 0;
+`;
+
+function Sider() {
+  return (
+    <MenuStyled></MenuStyled>
+  );
+}
+
+export default Sider;
+```
